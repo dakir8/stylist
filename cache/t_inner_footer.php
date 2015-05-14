@@ -1,0 +1,1 @@
+<?php if(define('common', true)) exit('Access Denine');?></body></html>

@@ -1,0 +1,47 @@
+<!DOCTYPE HTML>
+<html lang="en" prefix="fb: http://www.facebook.com/2008/fbml" xmlns="http://www.w3.org/1999/xhtml">
+<head>
+<title>Stylist</title>
+<meta http-equiv="Content-Type" content="text/html; charset=utf-8" />
+<meta http-equiv="X-UA-Compatible" content="IE=EmulateIE10" >
+<meta name="viewport" content="width=device-width, initial-scale=1">
+<meta http-equiv="Cache-Control" content="no-cache, no-store, must-revalidate" />
+<meta http-equiv="Pragma" content="no-cache" />
+<meta http-equiv="Expires" content="0" />
+<meta name="description" content="" />
+<!--{loop $_OG as $key=>$og}-->
+<meta property="{$key}" content="{$og}" />
+<!--{/loop}-->
+<base href="{$host_url}" />
+<link rel="shortcut icon" href="favicon.png" />
+
+<!--{loop $js_list as $js}-->
+<script type="text/javascript" src="js/{$js}.js"></script>
+<!--{/loop}-->
+<!--{loop $css_list as $css}-->
+<link href="css/{$css}.css" rel="stylesheet" type="text/css" />
+<!--{/loop}-->
+
+<script>
+var scroll_size = '15';
+var currenttime = Number("{$timenow}");
+var curserver = '{$host_url}';
+var regexp = {<!--{loop $regexp as $key=>$reg}-->'{$key}' : {$reg},<!--{/loop}-->'dummy': ''},latest_scrolltop = 0;
+
+$(document).ready(function(){
+
+$(document).on("swiperight", function(e){
+	if($.mobile.activePage.jqmData("panel") !== "open"){
+		$("#nav-panel").panel("open");
+	}
+});
+
+});
+
+
+
+</script>
+
+</head>
+
+<body>
