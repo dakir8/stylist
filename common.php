@@ -18,14 +18,14 @@ require_once 'function/db.func.php';
 
 // ----------------------------------------------
 
-DB::init('stylist');
+// DB::init('stylist');
 
 // ----------------------------------------------
 
 $js_list = array(
 'jquery-1.11.3.min',
 'jquery.mobile-1.4.5.min',
-'common',
+'common'
 );
 $css_list = array(
 'themes/default/jquery.mobile-1.4.5.min',

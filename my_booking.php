@@ -3,12 +3,12 @@ require_once('common.php');
 
 $result_a = array(
 	array(
-		'name' => 'no 1',
+		'name' => '旺角洗剪吹',
 		'date' => '2015-06-01'
 	),
 	array(
-		'name' => 'no 2',
-		'date' => '2015-06-02'
+		'name' => '大角咀平靚正',
+		'date' => '2015-05-01'
 	)
 );
 

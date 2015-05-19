@@ -1,4 +1,4 @@
-<temp>include_header</temp>
+<?php if(define('common', true)) exit('Access Denine');?><?php include template("include_header",true);?>
 <div role="main" data-role="content">
 	<p class="topic">服務評價</p>
 	<form>
@@ -6,4 +6,4 @@
 	</form>
 	<div class="clear"></div>
 </div>
-<temp>include_footer</temp>
+<?php include template("include_footer",true);?>
